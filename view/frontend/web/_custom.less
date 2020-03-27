@@ -1,3 +1,6 @@
+// 2020-03-27 "The `pub/media/custom.css` file is not properly loaded": https://github.com/vegandthecity/core/issues/1
+@i: '../VegAndTheCity_Core/i/';
+
 input[type="text"],
 input[type="password"],
 input[type="url"],
@@ -122,7 +125,7 @@ body a:hover, .catalog-product-view .page-wrapper .product-info-main .product-so
 }
 
 .page-wrapper {
-	background-image: url("i/rightbox.png"), url("i/leftbox.png");
+	background-image: url("@{i}rightbox.png"), url("@{i}leftbox.png");
 	background-position: right bottom, left bottom;
 	background-repeat: no-repeat;
 }
@@ -170,7 +173,7 @@ button.action-primary, .action.primary.action-primary, button, .action.primary {
 
 .page-footer {
 	background-color: transparent;
-	background-image: url("i/veg_footer.png");
+	background-image: url("@{i}veg_footer.png");
 	background-position: center bottom;
 	background-repeat: no-repeat;
 	clear: both;
@@ -207,7 +210,9 @@ div.block-search .minisearch .control input.input-text {
 
 .block-search .action.search {
 	color: #000;
-	top: 25px;
+	// 2020-03-27 "The `pub/media/custom.css` file is not properly loaded"
+	// https://github.com/vegandthecity/core/issues/1
+	top: 25px !important;
 }
 
 .block-search .action.search::before, div.block-search .minisearch .actions button::before {
@@ -262,7 +267,7 @@ div.block-search .minisearch .control input.input-text::placeholder {
 	vertical-align: middle;
 	line-height: 25px;
 	margin-right: 4px;
-	background: url("i/sprite.png") no-repeat scroll 10px -81px;
+	background: url("@{i}sprite.png") no-repeat scroll 10px -81px;
 	padding: 0px 0px 0px 42px;
 	cursor: pointer;
 }
@@ -296,7 +301,7 @@ div.block-search .minisearch .control input.input-text::placeholder {
 }
 
 .authorization-link a:before {
-	background: url("i/sprite.png") no-repeat scroll -9px -863px;
+	background: url("@{i}sprite.png") no-repeat scroll -9px -863px;
 	display: block;
 	height: 20px;
 	width: 22px;
@@ -355,7 +360,7 @@ div.block-search .minisearch .control input.input-text::placeholder {
 }
 
 .register-link:before {
-	background: url("i/sprite.png") no-repeat scroll -7px -535px;
+	background: url("@{i}sprite.png") no-repeat scroll -7px -535px;
 	display: block;
 	height: 20px;
 	width: 22px;
