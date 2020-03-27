@@ -2,8 +2,13 @@ A custom module for [vegandthecity.ch](https://vegandthecity.ch/shop) (Magento 2
 
 ## How to install
 ### Step 1
+#### 1.1
 ```sql
 DELETE FROM core_config_data WHERE 'design/head/includes' = path; 
+```       
+#### 1.2
+```posh
+rm -f pub/media/custom.css
 ```
 
 ### Step 2
