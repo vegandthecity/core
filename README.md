@@ -1,7 +1,13 @@
 A custom module for [vegandthecity.ch](https://vegandthecity.ch/shop) (Magento 2).  
 
 ## How to install
-```             
+### Step 1
+```sql
+DELETE FROM core_config_data WHERE 'design/head/includes' = path; 
+```
+
+### Step 2
+```posh             
 sudo service crond stop
 sudo service nginx stop                
 sudo service php-fpm stop
@@ -26,10 +32,10 @@ sudo service php-fpm start
 sudo service nginx start
 bin/magento maintenance:disable
 sudo service crond start
-```
+```      
 
 ## How to upgrade
-```              
+```posh              
 sudo service crond stop
 sudo service nginx stop                
 sudo service php-fpm stop
