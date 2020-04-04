@@ -15,7 +15,7 @@ rm -f pub/media/custom.css
 ```posh             
 sudo service crond stop
 sudo service nginx stop                
-sudo service php-fpm stop
+sudo service php7.2-fpm stop
 bin/magento maintenance:enable
 rm -rf composer.lock
 composer clear-cache
@@ -33,7 +33,7 @@ bin/magento setup:static-content:deploy \
 	--area frontend \
 	--theme tv_themevast_package/home_simple1 \
 	-f de_CH
-sudo service php-fpm start
+sudo service php7.2-fpm start
 sudo service nginx start
 bin/magento maintenance:disable
 sudo service crond start
@@ -43,7 +43,7 @@ sudo service crond start
 ```posh              
 sudo service crond stop
 sudo service nginx stop                
-sudo service php-fpm stop
+sudo service php7.2-fpm stop
 bin/magento maintenance:enable
 composer remove vegandthecity/core
 rm -rf composer.lock
@@ -62,7 +62,7 @@ bin/magento setup:static-content:deploy \
 	--area frontend \
 	--theme tv_themevast_package/home_simple1 \
 	-f de_CH
-sudo service php-fpm start
+sudo service php7.2-fpm start
 sudo service nginx start
 bin/magento maintenance:disable 
 sudo service crond start
