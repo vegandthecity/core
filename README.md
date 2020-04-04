@@ -13,7 +13,7 @@ rm -f pub/media/custom.css
 
 ### Step 2
 ```posh             
-sudo service crond stop
+sudo service cron stop
 sudo service nginx stop                
 sudo service php7.2-fpm stop
 bin/magento maintenance:enable
@@ -36,12 +36,12 @@ bin/magento setup:static-content:deploy \
 sudo service php7.2-fpm start
 sudo service nginx start
 bin/magento maintenance:disable
-sudo service crond start
+sudo service cron start
 ```      
 
 ## How to upgrade
 ```posh              
-sudo service crond stop
+sudo service cron stop
 sudo service nginx stop                
 sudo service php7.2-fpm stop
 bin/magento maintenance:enable
@@ -65,5 +65,5 @@ bin/magento setup:static-content:deploy \
 sudo service php7.2-fpm start
 sudo service nginx start
 bin/magento maintenance:disable 
-sudo service crond start
+sudo service cron start
 ```
