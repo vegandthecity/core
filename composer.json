@@ -1,6 +1,6 @@
 {
 	"name": "vegandthecity/core"
-	,"version": "0.0.2"
+	,"version": "0.0.3"
 	,"description": "A custom module for vegandthecity.ch (Magento 2)"
 	,"type": "magento2-module"
 	,"homepage": "https://github.com/vegandthecity/core"
@@ -11,6 +11,7 @@
 		,"homepage": "https://mage2.pro/users/dmitry_fedyuk"
 		,"role": "Developer"
 	}]
+	,"require": {"mage2pro/core": ">=6.4.5"}
 	,"autoload": {"files": ["registration.php"], "psr-4": {"VegAndTheCity\\Core\\": ""}}
 	,"keywords": ["Magento 2"]
 }
