@@ -1,6 +1,6 @@
 {
 	"name": "vegandthecity/core"
-	,"version": "0.0.4"
+	,"version": "0.0.5"
 	,"description": "A custom module for vegandthecity.ch (Magento 2)"
 	,"type": "magento2-module"
 	,"homepage": "https://github.com/vegandthecity/core"

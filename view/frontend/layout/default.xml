@@ -3,10 +3,12 @@
 	xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
 	xsi:noNamespaceSchemaLocation='urn:magento:framework:View/Layout/etc/page_configuration.xsd'
 >
-<!-- 2020-04-16
+<!--
+2020-04-16
 1) The design theme supports `_module.less` but we can not use it
 because the `custom.less` is wrongly designed to be applied after all other CSS rules.
 2) "«some responsiveness issues like on https://www.vegandthecity.ch/shop/bio-samen/fruchgemuse.html
-when you are on mobile (iphone x)»": https://github.com/vegandthecity/core/issues/2 -->
-	<head><css src='VegAndTheCity_Core::custom.css'/></head>
+when you are on mobile (iphone x)»": https://github.com/vegandthecity/core/issues/2
+2020-04-18 "Category pages show 3 products in a row instead of 4": https://github.com/vegandthecity/core/issues/3 -->
+	<body><referenceContainer name='root'><block before='-' class='VegAndTheCity\Core\Css'/></referenceContainer></body>
 </page>
