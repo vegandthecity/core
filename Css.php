@@ -25,5 +25,7 @@ class Css extends _P {
 	 * https://github.com/magento/magento2/blob/2.2.0/lib/internal/Magento/Framework/View/Element/AbstractBlock.php#L643-L689
 	 * @return string
 	 */
-	final protected function _toHtml() {return df_link_inline('VegAndTheCity_Core::custom.css');}
+	final protected function _toHtml() {return df_link_inline(sprintf(
+		'VegAndTheCity_Core::%s/custom.css', df_website_code()
+	));}
 }

@@ -9,6 +9,7 @@ DELETE FROM core_config_data WHERE 'design/head/includes' = path;
 #### 1.2
 ```posh
 rm -f pub/media/custom.css
+rm -f pub/media/custom-bio.css
 ```
 
 ### Step 2
