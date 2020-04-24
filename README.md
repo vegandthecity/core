@@ -33,6 +33,10 @@ bin/magento setup:static-content:deploy \
 	--area frontend \
 	--theme tv_themevast_package/home_simple1 \
 	-f de_CH
+bin/magento setup:static-content:deploy \
+	--area frontend \
+	--theme tv_themevast_package/home_simple1-bio \
+	-f de_DE
 sudo service php7.2-fpm start
 sudo service nginx start
 bin/magento maintenance:disable
@@ -62,6 +66,10 @@ bin/magento setup:static-content:deploy \
 	--area frontend \
 	--theme tv_themevast_package/home_simple1 \
 	-f de_CH
+bin/magento setup:static-content:deploy \
+	--area frontend \
+	--theme tv_themevast_package/home_simple1-bio \
+	-f de_DE
 sudo service php7.2-fpm start
 sudo service nginx start
 bin/magento maintenance:disable 
