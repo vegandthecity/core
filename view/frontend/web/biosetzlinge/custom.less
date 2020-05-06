@@ -123,10 +123,15 @@ body a:hover, .catalog-product-view .page-wrapper .product-info-main .product-so
 	padding: 0;
 }
 
-.page-wrapper {
-	background-image: url("@{i}right.png"), url("@{i}left.png") !important;
-	background-position: right bottom, left bottom;
-	background-repeat: no-repeat;
+// 2020-05-07 Dmitry Fedyuk https://www.upwork.com/fl/mage2pro
+// "Reimplement third-party changes made between 2020-04-26 and 2020-05-06":
+// https://github.com/vegandthecity/core/issues/4
+@media (min-width:1440px) {
+	.page-wrapper {
+		background-image: url("@{i}right.png"), url("@{i}left.png") !important;
+		background-position: right bottom, left bottom;
+		background-repeat: no-repeat;
+	}
 }
 
 .page-header .header.content {
