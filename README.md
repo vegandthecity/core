@@ -43,7 +43,8 @@ bin/magento setup:static-content:deploy \
 sudo service php7.2-fpm start
 sudo service nginx start
 bin/magento maintenance:disable
-sudo service cron start
+sudo service cron start 
+sudo service varnish restart
 ```      
 
 ## How to upgrade
@@ -77,4 +78,5 @@ sudo service php7.2-fpm start
 sudo service nginx start
 bin/magento maintenance:disable 
 sudo service cron start
+sudo service varnish restart
 ```
